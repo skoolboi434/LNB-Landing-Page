@@ -329,3 +329,44 @@ fa-icon path {
 .wcu__content--list .hypercore-button {
   display: inline-block;
 }
+
+/* Footer Section */
+
+.footer {
+  border-top: 6rem solid var(--color-purple);
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  max-width: calc(1200px + 4rem);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.footer__content--box {
+  text-align: center;
+  flex: 1;
+}
+
+.footer__content fa-icon {
+  color: #f7ce4c;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.footer__pillar-title {
+  color: var(--color-purple);
+  font-size: 2.6rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.footer__pillar-q,
+.footer__pillar-title {
+  color: var(--color-purple);
+  font-size: 2.6rem;
+  display: block;
+}
