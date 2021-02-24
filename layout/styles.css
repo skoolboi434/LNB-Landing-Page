@@ -5,6 +5,9 @@
   --color-white: #ffffff;
   --color-white-secondary: #fafafa;
   --color-red: #d24240;
+  --color-purple: #443a8c;
+
+  --color-grey-dark: #333;
 
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -114,7 +117,7 @@ fa-icon path {
   justify-content: flex-end;
   position: relative;
   z-index: 1;
-  padding: 2rem 2rem 0;
+  /* padding: 2rem 2rem 0; */
   height: 675px;
 }
 
@@ -127,4 +130,97 @@ fa-icon path {
   background: rgba(255, 255, 255, 0.8);
   position: absolute;
   z-index: -1;
+}
+
+.mainstage__content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  /* margin-left: 2vw; */
+  max-width: calc(1200px + 4rem);
+  margin: 0 auto;
+}
+
+.mainstage__content--text {
+  height: 100%;
+  padding-top: 8rem;
+}
+
+.mainstage__content--text span {
+  display: block;
+}
+
+.mainstage__content--text span {
+  padding: 0;
+  max-width: 470px;
+  text-align: left;
+}
+
+.purple-text {
+  color: var(--color-purple);
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.grey-text {
+  color: var(--color-grey-dark);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* Form Section */
+
+.form::before {
+  content: url(http://52.73.242.68/~servicewizards/wp-content/uploads/featured-water-heaters-isolated.png);
+  position: absolute;
+  transform: translate(-18.5rem, -63rem);
+  right: 15vw;
+  z-index: 999;
+}
+
+.pre-form {
+  background: var(--color-purple);
+  padding: 4em 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.pre-form__content {
+  max-width: calc(1200px + 4rem);
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pre-form__title {
+  color: var(--color-white);
+  font-size: 60px;
+  font-weight: 700;
+  max-width: 480px;
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.form-container {
+  background-color: var(--color-white-secondary);
+  padding: 4rem 2rem;
+}
+
+.form-container {
+  position: absolute;
+  right: 17vw;
+  transform: translate(0, -35rem);
+  z-index: 999;
+  border-radius: 1rem;
+  width: 575px;
+  text-align: center;
+}
+
+.form-container .gform_title,
+.purple-text {
+  color: var(--color-purple);
+  font-size: 60px;
 }
