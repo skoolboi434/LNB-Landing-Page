@@ -224,3 +224,64 @@ fa-icon path {
   color: var(--color-purple);
   font-size: 60px;
 }
+
+/* Brand Section */
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem 4rem;
+  transition: 0.25s;
+}
+
+.brand__content::before {
+  content: url(http://52.73.242.68/~servicewizards/wp-content/uploads/service-wizards.svg);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.05;
+  transform: translate(-10rem, -5rem);
+  transition: 0.25s;
+}
+
+.brand__content {
+  padding: 10rem 2rem 4rem;
+}
+
+/* Reviews Section */
+
+.reviews {
+  background-color: var(--color-purple);
+  min-height: 45rem;
+  padding: 5rem 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CTA Section */
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: var(--color-white-secondary);
+  box-shadow: var(--shadow);
+}
+
+.cta .purple-text,
+.grey-text {
+  font-size: 4.25rem;
+  font-weight: 700;
+}
+
+.cta__content--btns {
+  padding: 1.5rem 0;
+  display: flex;
+}
+
+.cta__content--btns .icon-button {
+  margin-right: 1.5rem;
+}
