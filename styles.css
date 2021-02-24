@@ -1,0 +1,130 @@
+/* Varialbles*/
+
+:root {
+  --color-primary: #004983;
+  --color-white: #ffffff;
+  --color-white-secondary: #fafafa;
+  --color-red: #d24240;
+
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px; 10px / 16px = 62.5%; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+
+.icon-button {
+  border: 3px solid var(--color-red);
+  color: var(--color-red);
+  padding: 0.15em 0.75em;
+  box-shadow: none;
+  border-radius: 2em;
+  font-size: 3.75rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+}
+
+.hypercore-button {
+  background-color: var(--color-red);
+  color: #fff;
+  padding: 0.75em 1.75em;
+  box-shadow: none;
+  border-radius: 2em;
+  font-size: 2.4rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+fa-icon {
+  font-size: inherit;
+  display: inline-block;
+  line-height: 1em;
+}
+
+fa-icon svg {
+  height: 1em;
+  max-width: 100%;
+  vertical-align: -0.125em;
+}
+
+fa-icon path {
+  fill: currentColor;
+}
+
+/* Heading Styles */
+
+.landing-heading {
+  background-color: var(--color-white-secondary);
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 3;
+}
+
+.landing-heading__content {
+  display: flex;
+  justify-content: center;
+  max-width: calc(1200px + 4rem);
+  margin: 0 auto;
+  align-items: center;
+}
+
+.landing-heading__content .logo {
+  margin: 0 0 -2rem;
+  flex-grow: 1;
+}
+
+.landing-heading__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-heading__buttons .hypercore-button {
+  /* width: 100%; */
+}
+
+.landing-heading__buttons .icon-button {
+  margin-right: 1.5rem;
+}
+
+/* Mainstage Styles */
+
+.mainstage {
+  background-image: url('http://52.73.242.68/~servicewizards/wp-content/uploads/aido-service-wizards-in-residential-neighborhood.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2rem 0;
+  height: 675px;
+}
+
+.mainstage::before {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  z-index: -1;
+}
