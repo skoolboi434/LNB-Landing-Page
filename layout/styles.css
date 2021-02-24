@@ -285,3 +285,47 @@ fa-icon path {
 .cta__content--btns .icon-button {
   margin-right: 1.5rem;
 }
+
+/* WCU Section */
+
+.wcu {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.wcu .purple-text {
+  font-size: 3em;
+  margin-bottom: 2rem;
+}
+
+.wcu__content {
+  padding: 2rem;
+}
+
+.wcu__content--award {
+  text-align: right;
+}
+
+.wcu__content--list ul {
+  display: grid;
+  row-gap: 1rem;
+  padding: 0;
+}
+
+.wcu__content--list li {
+  display: flex;
+}
+
+.wcu__content--list li::before {
+  content: url(http://52.73.242.68/~servicewizards/wp-content/uploads/check-in-circle-green42A853.svg);
+  padding-right: 2rem;
+}
+
+.wcu__content--list li span {
+  font-size: 1.5rem;
+}
+
+.wcu__content--list .hypercore-button {
+  display: inline-block;
+}
