@@ -83,6 +83,7 @@ fa-icon path {
   max-width: calc(1200px + 4rem);
   margin: 0 auto;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .landing-heading__content .logo {
@@ -112,12 +113,12 @@ fa-icon path {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
   z-index: 1;
-  /* padding: 2rem 2rem 0; */
+  padding: 2rem 2rem 0;
   height: 675px;
 }
 
@@ -133,17 +134,22 @@ fa-icon path {
 }
 
 .mainstage__content {
+  display: flex;
   position: relative;
-  text-align: center;
   width: 100%;
-  /* margin-left: 2vw; */
   max-width: calc(1200px + 4rem);
   margin: 0 auto;
+  /* justify-content: space-between; */
 }
 
 .mainstage__content--text {
   height: 100%;
-  padding-top: 8rem;
+  flex: 1;
+}
+
+.mainstage__content--image {
+  text-align: center;
+  flex: 1;
 }
 
 .mainstage__content--text span {
@@ -170,29 +176,33 @@ fa-icon path {
 
 /* Form Section */
 
-.form::before {
+/* .form::before {
   content: url(http://52.73.242.68/~servicewizards/wp-content/uploads/featured-water-heaters-isolated.png);
   position: absolute;
   transform: translate(-18.5rem, -63rem);
   right: 15vw;
   z-index: 999;
-}
+} */
 
-.pre-form {
+.form {
   background: var(--color-purple);
   padding: 4em 3rem;
-  display: flex;
   align-items: center;
 }
 
-.pre-form__content {
+.form__content {
   max-width: calc(1200px + 4rem);
   display: flex;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
-.pre-form__title {
+.form__content--title {
+  flex: 1;
+}
+
+.form__title {
   color: var(--color-white);
   font-size: 60px;
   font-weight: 700;
@@ -200,29 +210,27 @@ fa-icon path {
   display: block;
 }
 
-.mobile {
-  display: none;
-}
-
-.form-container {
+.form__container {
   background-color: var(--color-white-secondary);
   padding: 4rem 2rem;
-}
-
-.form-container {
-  position: absolute;
-  right: 17vw;
-  transform: translate(0, -35rem);
-  z-index: 999;
-  border-radius: 1rem;
-  width: 575px;
+  min-height: 33.5rem;
   text-align: center;
+  top: -20rem;
+  right: 0;
+  border-radius: 1rem;
+  width: 57.5rem;
+  position: absolute;
+  z-index: 999;
+  box-shadow: var(--shadow);
 }
 
-.form-container .gform_title,
-.purple-text {
+.form__container--title {
   color: var(--color-purple);
   font-size: 60px;
+}
+
+.form__mobile {
+  display: none;
 }
 
 /* Brand Section */
@@ -369,4 +377,53 @@ fa-icon path {
   color: var(--color-purple);
   font-size: 2.6rem;
   display: block;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1200px) {
+  .form-container .gform_title,
+  .purple-text {
+    font-size: 4.6em;
+  }
+
+  .wcu {
+    display: block;
+  }
+
+  .wcu__content--award,
+  .wcu__content--list {
+    text-align: center;
+  }
+
+  .wcu__content--list .green-chk-list {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .footer__content {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__content--image {
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .form-container .gform_title,
+  .purple-text {
+    font-size: 4.6em;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mainstage {
+    height: 100%;
+    justify-content: space-between;
+  }
 }
