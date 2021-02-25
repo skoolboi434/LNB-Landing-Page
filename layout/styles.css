@@ -1,11 +1,10 @@
 /* Varialbles*/
 
 :root {
-  --color-primary: #004983;
+  --color-primary: #d24240;
+  --color-secondary: #443a8c;
   --color-white: #ffffff;
   --color-white-secondary: #fafafa;
-  --color-red: #d24240;
-  --color-purple: #443a8c;
 
   --color-grey-dark: #333;
 
@@ -28,8 +27,8 @@ a {
 /* Buttons */
 
 .icon-button {
-  border: 3px solid var(--color-red);
-  color: var(--color-red);
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
   padding: 0.15em 0.75em;
   box-shadow: none;
   border-radius: 2em;
@@ -42,7 +41,7 @@ a {
 }
 
 .hypercore-button {
-  background-color: var(--color-red);
+  background-color: var(--color-primary);
   color: #fff;
   padding: 0.75em 1.75em;
   box-shadow: none;
@@ -163,7 +162,7 @@ fa-icon path {
 }
 
 .purple-text {
-  color: var(--color-purple);
+  color: var(--color-secondary);
   font-size: 6rem;
   font-weight: 700;
 }
@@ -185,7 +184,7 @@ fa-icon path {
 } */
 
 .form {
-  background: var(--color-purple);
+  background: var(--color-secondary);
   padding: 4em 3rem;
   align-items: center;
 }
@@ -225,7 +224,7 @@ fa-icon path {
 }
 
 .form__container--title {
-  color: var(--color-purple);
+  color: var(--color-secondary);
   font-size: 60px;
 }
 
@@ -266,7 +265,7 @@ fa-icon path {
 /* Reviews Section */
 
 .reviews {
-  background-color: var(--color-purple);
+  background-color: var(--color-secondary);
   min-height: 45rem;
   padding: 5rem 2rem;
   background-position: center;
@@ -348,7 +347,7 @@ fa-icon path {
 /* Footer Section */
 
 .footer {
-  border-top: 6rem solid var(--color-purple);
+  border-top: 6rem solid var(--color-secondary);
 }
 
 .footer__content {
@@ -372,7 +371,7 @@ fa-icon path {
 }
 
 .footer__pillar-title {
-  color: var(--color-purple);
+  color: var(--color-secondary);
   font-size: 2.6rem;
   font-weight: 700;
   display: block;
@@ -381,7 +380,7 @@ fa-icon path {
 
 .footer__pillar-q,
 .footer__pillar-title {
-  color: var(--color-purple);
+  color: var(--color-secondary);
   font-size: 2.6rem;
   display: block;
 }
@@ -454,5 +453,59 @@ fa-icon path {
 
   .footer__content--image {
     margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .landing-heading__buttons {
+    display: block;
+    padding: 2rem;
+  }
+
+  .landing-heading__buttons a {
+    display: block;
+    text-align: center;
+    margin-right: 0 !important;
+  }
+
+  .landing-heading__buttons .icon-button {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Brand Responsive */
+
+  .brand__content {
+    padding: 0;
+  }
+
+  .brand__content::before {
+    content: '';
+  }
+
+  .brand__content .purple-text,
+  .grey-text {
+    font-size: 3rem;
+  }
+
+  /* CTA Responsive */
+
+  .cta .purple-text,
+  .grey-text {
+    font-size: 3rem;
+  }
+
+  .cta__content--btns {
+    display: block;
+    width: 100%;
+  }
+
+  .cta__content--btns a {
+    display: block;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  .cta__content--btns .icon-button {
+    margin-bottom: 1.5rem;
   }
 }
