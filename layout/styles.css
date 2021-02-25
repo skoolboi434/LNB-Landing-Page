@@ -233,6 +233,13 @@ fa-icon path {
   display: none;
 }
 
+.form__mobile {
+  background-color: var(--color-white-secondary);
+  text-align: center;
+  padding: 3rem 0;
+  box-shadow: var(--shadow);
+}
+
 /* Brand Section */
 
 .brand {
@@ -382,10 +389,46 @@ fa-icon path {
 /* Responsive Styles */
 
 @media screen and (max-width: 1200px) {
-  .form-container .gform_title,
-  .purple-text {
-    font-size: 4.6em;
+  .landing-heading__content {
+    display: block;
+    padding: 2rem 0;
   }
+
+  .landing-heading__content .logo {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Mainstage Responsive */
+
+  .mainstage__content {
+    display: block;
+  }
+
+  .mainstage__content--text span {
+    margin: 0 auto;
+  }
+
+  /* Form Responsive */
+
+  .form__content {
+    display: block;
+  }
+
+  .form__content--title .form__title {
+    margin: 0 auto;
+  }
+
+  .form__container {
+    display: none;
+  }
+
+  .form__mobile {
+    display: block;
+  }
+
+  /* WCU Responsive */
 
   .wcu {
     display: block;
@@ -402,6 +445,8 @@ fa-icon path {
     text-align: left;
   }
 
+  /* Footer Responsive */
+
   .footer__content {
     display: block;
     text-align: center;
@@ -409,21 +454,5 @@ fa-icon path {
 
   .footer__content--image {
     margin: 2rem 0;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  .form-container .gform_title,
-  .purple-text {
-    font-size: 4.6em;
-  }
-
-  .desktop {
-    display: none;
-  }
-
-  .mainstage {
-    height: 100%;
-    justify-content: space-between;
   }
 }
