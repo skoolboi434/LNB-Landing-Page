@@ -51,7 +51,35 @@ function create_post_type(){
 
 // Theme Widgets
 
+
+
 if ( function_exists('register_sidebar') ) {
+
+  // WCU Widgets
+
+  register_sidebar( array(
+    'name' => 'WCU Logo Widget',
+    'id' => 'wcu-logo-widget',
+    'description' => 'Appears in the why choose us area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="footer__pillar-title">',
+    'after_title' => '</h3>',
+  ) );
+
+  register_sidebar( array(
+    'name' => 'WCU List Widget',
+    'id' => 'wcu-list-widget',
+    'description' => 'Appears in the why choose us area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="footer__pillar-title">',
+    'after_title' => '</h3>',
+  ) );
+
+
+  // Footer Widgets
+
   register_sidebar( array(
     'name' => 'Footer Quote Widget',
     'id' => 'footer-quote-widget',

@@ -85,43 +85,20 @@
 
 <section class="wcu">
     <div class="wcu__content wcu__content--award">
-        <img
-            src="http://52.73.242.68/~servicewizards/wp-content/uploads/badge-readers-choice-2020.svg"
-        />
+        <?php
+            if(is_active_sidebar('wcu-logo-widget')){
+            dynamic_sidebar('wcu-logo-widget');
+            }
+        ?>
     </div>
     <div class="wcu__content wcu__content--list">
         <h3 class="custom-text-primary">Why Choose Us</h3>
-        <ul class="green-chk-list">
-            <li>
-            <span
-                ><strong>Doing the right thing!</strong> — Not the easy
-                thing.</span
-            >
-            </li>
-            <li>
-            <span
-                ><strong>Latest Technology</strong> — and training in the
-                industry.</span
-            >
-            </li>
-            <li>
-            <span
-                ><strong>Our Reputation</strong> — for quality and service.</span
-            >
-            </li>
-            <li>
-            <span
-                ><strong>24/7</strong> — We answer your calls when you need
-                us!</span
-            >
-            </li>
-            <li>
-            <span
-                ><strong>Magical Club Members</strong> — No after hours or service
-                call fees.</span
-            >
-            </li>
-        </ul>
+        <?php
+            if(is_active_sidebar('wcu-list-widget')){
+            dynamic_sidebar('wcu-list-widget');
+            }
+        ?>
+        
 
         <a
             is="hypercore-button"
