@@ -1,0 +1,398 @@
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* Custom Text */
+.custom-text-primary {
+  color: #443a8c;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.custom-text-secondary {
+  color: #333;
+  font-size: 4rem;
+  font-weight: 700;
+}
+/* Custom Button Styles */
+.btn-custom {
+  border-radius: 2em;
+  padding: 0.15em 0.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn-custom.icon-button {
+  border: 3px solid #d24240;
+  display: inline-block;
+  color: #d24240;
+  font-size: 3.75rem;
+  text-align: center;
+}
+.btn-custom.hypercore-button {
+  background-color: #d24240;
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 0.75em 1.75em;
+}
+.btn-custom fa-icon {
+  font-size: inherit;
+  display: inline-block;
+  line-height: 1em;
+}
+.btn-custom fa-icon svg {
+  height: 1em;
+  max-width: 100%;
+  vertical-align: -0.125em;
+}
+.btn-custom fa-icon path {
+  fill: currentColor;
+}
+/* Heading Styles */
+.landing-heading {
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  z-index: 3;
+}
+.landing-heading .landing-heading__content {
+  display: flex;
+  justify-content: center;
+  max-width: calc(1200px + 4rem);
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 2rem;
+}
+.landing-heading .landing-heading__content .logo {
+  margin: 0 0 -2rem;
+  flex-grow: 1;
+}
+.landing-heading .landing-heading__content .landing-heading__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.landing-heading .landing-heading__content .landing-heading__buttons .icon-button {
+  margin-right: 1.5rem;
+}
+/* Mainstage Styles */
+.mainstage {
+  background-image: url('http://52.73.242.68/~servicewizards/wp-content/uploads/aido-service-wizards-in-residential-neighborhood.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2rem 0;
+  height: 675px;
+}
+.mainstage:before {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  z-index: -1;
+}
+.mainstage .mainstage__content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: calc(1200px + 4rem);
+  margin: 0 auto;
+  /* justify-content: space-between; */
+}
+.mainstage .mainstage__content .mainstage__content--text {
+  height: 100%;
+  flex: 1;
+}
+.mainstage .mainstage__content .mainstage__content--text span {
+  display: block;
+  padding: 0;
+  max-width: 470px;
+  text-align: left;
+}
+.mainstage .mainstage__content .mainstage__content--image {
+  text-align: center;
+  flex: 1;
+}
+/* Form Styles */
+.form {
+  background: #443a8c;
+  padding: 4em 3rem;
+  align-items: center;
+}
+.form .form__content {
+  max-width: calc(1200px + 4rem);
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.form .form__content .form__content--title {
+  flex: 1;
+}
+.form .form__content .form__content--title .form__title {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  max-width: 480px;
+  display: block;
+}
+.form .form__content .form__container {
+  background-color: #fafafa;
+  padding: 4rem 2rem;
+  min-height: 33.5rem;
+  text-align: center;
+  top: -20rem;
+  right: 0;
+  border-radius: 1rem;
+  width: 57.5rem;
+  position: absolute;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form .form__content .form__container .form__container--title {
+  color: #443a8c;
+}
+.form__mobile {
+  display: none;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 3rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* Brand Section */
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem 4rem;
+  transition: 0.25s;
+}
+.brand .brand__content {
+  padding: 10rem 2rem 4rem;
+}
+.brand .brand__content:before {
+  content: url(http://52.73.242.68/~servicewizards/wp-content/uploads/service-wizards.svg);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.05;
+  transform: translate(-10rem, -5rem);
+  transition: 0.25s;
+}
+/* Reviews Section */
+.reviews {
+  background-color: #443a8c;
+  min-height: 45rem;
+  padding: 5rem 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* CTA Section */
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cta .cta__content--btns {
+  padding: 1.5rem 0;
+  display: flex;
+}
+.cta .cta__content--btns .icon-button {
+  margin-right: 1.5rem;
+}
+/* WCU Section */
+.wcu {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+.wcu .wcu__content {
+  padding: 2rem;
+}
+.wcu .wcu__content.wcu__content--list ul {
+  display: grid;
+  row-gap: 1rem;
+  padding: 2rem 0;
+}
+.wcu .wcu__content.wcu__content--list ul li {
+  display: flex;
+}
+.wcu .wcu__content.wcu__content--list ul li:before {
+  content: url(http://52.73.242.68/~servicewizards/wp-content/uploads/check-in-circle-green42A853.svg);
+  padding-right: 2rem;
+}
+.wcu .wcu__content.wcu__content--list ul li span {
+  font-size: 1.5rem;
+}
+.wcu .wcu__content.wcu__content--list .hypercore-button {
+  display: inline-block;
+}
+/* Footer Section */
+.footer {
+  border-top: 6rem solid #443a8c;
+}
+.footer .footer__content {
+  display: flex;
+  justify-content: center;
+  max-width: calc(1200px + 4rem);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.footer .footer__content .footer__content--box {
+  text-align: center;
+  flex: 1;
+}
+.footer .footer__content .footer__content--box .footer__pillar-title {
+  color: #443a8c;
+  font-size: 2.6rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.footer .footer__content .footer__content--box .footer__pillar-q, .footer .footer__content .footer__content--box .footer__pillar-title {
+  color: #443a8c;
+  font-size: 2.6rem;
+  display: block;
+}
+.footer .footer__content .footer__content--box fa-icon {
+  /* color: #f7ce4c !important;
+   font-size: 25px;
+   display: block;
+   margin-bottom: 1.5rem; */
+  display: none;
+}
+/* Responsive Styles */
+@media screen and (max-width: 1100px) {
+  .landing-heading .landing-heading__content {
+    display: block;
+    padding: 2rem 0;
+  }
+  .landing-heading .landing-heading__content .logo {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* Mainstage Responsive */
+  .mainstage .mainstage__content {
+    display: block;
+  }
+  .mainstage .mainstage__content .mainstage__content--text span {
+    margin: 0 auto;
+    /* Form Responsive */
+  }
+  .form {
+    position: relative;
+    z-index: 333;
+    margin-top: -2.8rem;
+  }
+  .form .form__content {
+    display: block;
+  }
+  .form .form__content .form__content--title .form__title {
+    margin: 0 auto;
+  }
+  .form .form__content .form__container {
+    display: none;
+  }
+  .form__mobile {
+    display: block;
+    /* WCU Responsive */
+  }
+  .wcu {
+    display: block;
+  }
+  .wcu__content--award, .wcu__content--list {
+    text-align: center;
+  }
+  .wcu__content--list .green-chk-list {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    /* Footer Responsive */
+  }
+  .footer__content {
+    display: block;
+    text-align: center;
+  }
+  .footer__content--image {
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .landing-heading__buttons {
+    display: block;
+    padding: 0 2rem;
+  }
+  .landing-heading .landing-heading__content .landing-heading__buttons {
+    display: block;
+  }
+  .landing-heading .landing-heading__content .landing-heading__buttons a {
+    display: block;
+    text-align: center;
+    margin-right: 0 !important;
+  }
+  .landing-heading .landing-heading__content .landing-heading__buttons .icon-button {
+    margin-bottom: 1.5rem;
+    /* Brand Responsive */
+  }
+  .brand .brand__content {
+    padding: 0;
+  }
+  .brand .brand__content:before {
+    content: '';
+  }
+  .brand .brand__content .custom-text-purple, .brand .brand__content .custom-text-grey {
+    font-size: 3rem;
+    /* CTA Responsive */
+  }
+  .cta .custom-text-purple, .cta .custom-text-grey {
+    font-size: 3rem;
+  }
+  .cta .cta__content--btns {
+    display: block;
+    width: 100%;
+  }
+  .cta .cta__content--btns a {
+    display: block;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+  .cta .cta__content--btns .icon-button {
+    margin-bottom: 1.5rem;
+    /* Footer Responsive */
+  }
+  .footer .footer__content {
+    display: block;
+    text-align: center;
+  }
+  .footer__content {
+    display: block;
+    text-align: center;
+  }
+  .footer__content .footer__content--image {
+    margin: 2rem 0;
+  }
+}
