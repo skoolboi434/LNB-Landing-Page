@@ -1,5 +1,13 @@
 <?php
 
+add_shortcode('site_url', function () {return site_url();});
+
+
+
+add_shortcode( 'company_phone', function () {
+  return '123-456-7890';
+} );
+
 function lnb_scripts() {
 	
 	// enqueue style

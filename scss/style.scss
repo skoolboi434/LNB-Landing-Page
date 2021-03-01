@@ -2,6 +2,7 @@
 
 $color-primary: #d24240;
 $color-secondary: #443a8c;
+$color-tertiary: #f7ce4c;
 $color-white: #ffffff;
 $color-white-secondary: #fafafa;
 
@@ -343,11 +344,17 @@ a {
       }
 
       fa-icon {
-        /* color: #f7ce4c !important;
+        fill: $color-tertiary;
         font-size: 25px;
         display: block;
-        margin-bottom: 1.5rem; */
-        display: none;
+        margin-bottom: 1.5rem;
+        /* display: none; */
+      }
+
+      fa-icon svg {
+        height: 1em;
+        max-width: 100%;
+        vertical-align: -0.125em;
       }
     }
   }
