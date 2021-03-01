@@ -55,6 +55,18 @@ function create_post_type(){
 
 if ( function_exists('register_sidebar') ) {
 
+  // Header Widgets
+
+  register_sidebar( array(
+    'name' => 'Header Logo Widget',
+    'id' => 'header-logo-widget',
+    'description' => 'Appears in the header area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="footer__pillar-title">',
+    'after_title' => '</h3>',
+  ) );
+
   // WCU Widgets
 
   register_sidebar( array(

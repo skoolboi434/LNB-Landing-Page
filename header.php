@@ -18,13 +18,13 @@
       <div class="landing-heading__content">
         <div class="logo">
           <a class="logo-link" href="<?php echo do_shortcode('[site_url]'); ?>"
-            ><img
-              class="logo logo--header"
-              sizes=""
-              src="http://52.73.242.68/~servicewizards/wp-content/uploads/logo-aido-climate-solutions.svg"
-              srcset=""
-              alt="Logo Aido Climate Solutions"
-          /></a>
+            >
+            <?php
+            if(is_active_sidebar('header-logo-widget')){
+            dynamic_sidebar('header-logo-widget');
+            }
+            ?>
+        </a>
         </div>
         <div class="landing-heading__buttons">
           <a class="btn-custom icon-button" href="tel:<?php echo do_shortcode('[company_phone]'); ?>" aria-label="Button">
