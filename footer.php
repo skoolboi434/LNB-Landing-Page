@@ -17,7 +17,7 @@
             }
             ?>
           
-          
+          <h3 class="footer__pillar-title">Get A Quote</h3>
           <span class="footer__pillar-q">Have questions?</span>
           <a href="tel:226-210-3990" class="footer__pillar-q">Call <?php echo do_shortcode('[company_phone]'); ?></a>
         </div>
@@ -41,13 +41,8 @@
                 d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0z"
               ></path></svg
           ></fa-icon>
-          <?php
-            if(is_active_sidebar('footer-location-widget')){
-            dynamic_sidebar('footer-location-widget');
-            }
-            ?>
-          
-          <span class="footer__pillar-q">1234 Main St. <br />Cary NC 123456</span>
+          <h3 class="footer__pillar-title">Our Location</h3>
+          <span class="footer__pillar-q"><?php echo do_shortcode('[company_address]'); ?></span>
           
         </div>
       </div>

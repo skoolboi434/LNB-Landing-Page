@@ -40,7 +40,9 @@
     </div>
 </section>
 
-<section class="reviews hyper-lazyload-bg"></section>
+<section class="reviews hyper-lazyload-bg">
+    <?php echo do_shortcode('[brb_collection id="8"]'); ?>
+</section>
 
 <section class="cta">
     <div class="cta__content">
